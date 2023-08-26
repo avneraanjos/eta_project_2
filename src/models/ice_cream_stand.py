@@ -4,7 +4,7 @@ from src.models.restaurant import Restaurant
 class IceCreamStand(Restaurant):
     """Um tipo especializado de restaurante."""
 
-    def __init__(self, restaurant_name, cuisine_type, flavors_list):
+    def __init__(self, restaurant_name: str, cuisine_type, flavors_list):
         """
         Inicialize os atributos da classe pai.
         Em seguida, inicialize os atributos específicos de uma sorveteria.
