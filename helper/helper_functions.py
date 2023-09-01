@@ -3,13 +3,12 @@ from enum import Enum
 
 class ReturnCode(Enum):
     STATUS_OK = 0
-    STATUS_NONE = -1
-    STATUS_INVALID = -2
-    STATUS_ERROR = -3
+    STATUS_INVALID = -1
+    STATUS_ERROR = -2
 
 
-def validate_name(name: str) -> ReturnCode:
-    if not isinstance(name, str) or name == '':
+def validate_str(name: str) -> ReturnCode:
+    if not isinstance(name, str) or len(name.strip()) == 0 or name is None:
         return ReturnCode.STATUS_INVALID
     else:
         return ReturnCode.STATUS_OK

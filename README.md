@@ -1,5 +1,13 @@
-# ETA
+# ETA - PROJETO FINAL
+Avner Augusto dos Anjos - aaa4
 
+## Summary
+Com o objetivo de simular um código de produção, algumas features foram implementadas:
+- Todas os métodos retornam apenas um dos 3 valores do tipo ReturnCode: STATUS_OK, STATUS_INVALID ou STATUS_ERROR.
+- Informações adicionais podem ser vistas e verificadas pelos logs.
+- O arquivo helper_functions contém alguns métodos ou enum auxiliares.
+- Nos testes sãoo verificados os retornos das funçōes assim como os logs.
+- Cada classe de test possui seu próprio seu setup, que é responsável por definir os parâmetros do objeto de teste.
 ## Setup
 
 ```bash

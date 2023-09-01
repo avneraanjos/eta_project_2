@@ -10,8 +10,9 @@ class Restaurant:
     """Modelo de restaurante simples."""
 
     def __init__(self, restaurant_name: str, cuisine_type: str) -> None:
-        if not is_ok(validate_name(restaurant_name)) or \
-                not is_ok(validate_name(cuisine_type)):
+        # Refatoracao: Adicionado verificacao de parametros para criacao do objeto.
+        if not is_ok(validate_str(restaurant_name)) or \
+                not is_ok(validate_str(cuisine_type)):
             raise ValueError("Parametros invalidos")
 
         self.restaurant_name = restaurant_name.title()
