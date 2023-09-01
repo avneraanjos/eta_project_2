@@ -166,7 +166,6 @@ class TestRestaurant:
             Restaurant(0, self.cuisine_type)
         assert str(excinfo.value) == "Parametros invalidos"
 
-
     def test_invalid_init_type_empty(self, logs):
         with pytest.raises(ValueError) as excinfo:
             Restaurant(self.restaurant_name, '')
